@@ -1,0 +1,77 @@
+﻿<Window x:Class="Sistema_Academico.CadastroAluno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sistema_Academico"
+        mc:Ignorable="d"
+        Title="Cadastro de Aluno" Height="190" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblRA"
+               Content="RA:"
+               Grid.Row="1"
+               HorizontalAlignment="Left"  
+               VerticalAlignment="Center"
+               Margin="30,0,0,0"
+               />
+        <TextBox x:Name="txtRA"
+                 Grid.Row="1"
+                 HorizontalAlignment="Left"
+                 Margin="80,7,0,7"
+                 Width="65"
+                 Text="07250177"                 
+                 />
+        <Label x:Name="lblEmail"
+               Content="E-mail:"
+               Grid.Row="1"
+               Margin="150,0,0,0"
+               VerticalAlignment="Center"
+               />
+        <TextBox x:Name="txtEmail"
+                 Grid.Row="1"
+                 Margin="0,7,30,7"
+                 Width="165"
+                 HorizontalAlignment="Right"
+                 Text="carlinhos@hotmail.com"/>
+        <Label x:Name="lblSenha"
+               Content="Senha:"
+               Grid.Row="2"
+               Margin="30,0,0,0"
+               VerticalAlignment="Center"
+               />
+        <TextBox x:Name="txtSenha"
+                 Grid.Row="2"
+                 HorizontalAlignment="Left"
+                 Margin="80,7,0,7"
+                 Width="80"
+                 Text="********"                 
+                 />
+        <Label x:Name="lblSenhaAgain"
+               Content="Confirme a Senha:"
+               Grid.Row="2"
+               VerticalAlignment="Center"
+               Margin="165,0,0,0"
+               />
+        <TextBox x:Name="txtSenhaAgain"
+                 Grid.Row="2"
+                 HorizontalAlignment="Right"
+                 Margin="0,7,30,7"
+                 Width="80"
+                 Text="********"                 
+                 />
+        <Button x:Name="btnCadastrar"
+                Grid.Row="3"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="Cadastrar"
+                Width="65"
+                />
+    </Grid>
+</Window>
